@@ -192,11 +192,11 @@ def get_token_response():
     # Ensure "token" appears first in the JSON response.
     ordered_result = {
         "token": result.get("token"),
-        "api": result.get("api"),
+        #"api": result.get("api"),
         "region": result.get("region"),
         "status": result.get("status"),
-        "credit": "Flexbase",
-        "Join For More": "Telegram: @Flexbasei"
+        "owner": "SUDIPTO",
+        "contact": "insta: @sudipto.sys"
     }
 
     response = make_response(jsonify(ordered_result))
